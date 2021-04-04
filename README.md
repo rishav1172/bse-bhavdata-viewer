@@ -13,9 +13,27 @@ This Web Application
 - Writes the records into Redis (Fields: code, name, open, high, low, close).
 - Renders a VueJS frontend with a search box that allows the stored entries to be searched by name and renders a 
   table of results and you can download the results as CSV.
-  
+
 ## Project Setup
 
+### Frontend folder -
+Navigate to frontend folder and run
+
+```
+npm install
+```
+This will download all the requirement.
+
+Configure endpoint axios Enpoint Url at public/constatnt.js
+```
+apiEndpointUrl = <Your django web-server url>
+```
+
+Generate all static files
+```
+npm run build
+```
+This will generate static files in backend/static and backend/template folder
 
 ### Backend folder - 
 First install all dependencies -
@@ -32,14 +50,7 @@ REDIS_PASSWORD = <redis-server password>
 ```
 
 
-### Frontend folder -
-Generate static files from frontend
-Navigate to frontend folder and run - 
 
-```
-npm run build
-```
-This will generate all static files
 
 
 

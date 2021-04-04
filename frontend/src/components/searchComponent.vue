@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import constant from '../../public/constant';
 import axios from 'axios';
 export default {
     name: "SearchComponent",
@@ -24,7 +25,7 @@ export default {
                 headers: {
                     "content-type": "application/json"
                 },
-                url: 'http://127.0.0.1:8000/search',
+                url: constant.apiEndpointUrl + '/search',
             }).then(response => this.$emit('clicked', response.data));
         }
     }

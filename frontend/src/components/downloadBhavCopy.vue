@@ -6,8 +6,8 @@
 
 
 <script>
-import axios from 'axios'
-
+import axios from 'axios';
+import constant from '../../public/constant';
 export default {
     name: "DownloadBhavCopy",
     props: ["bhavCopyData"],
@@ -19,7 +19,7 @@ export default {
                 headers: {
                     "content-type": "application/json"
                 },
-                url: 'http://127.0.0.1:8000/download',
+                url: constant.apiEndpointUrl + '/download',
             }).then(response => {
                 var fileURL = window.URL.createObjectURL(new Blob([response.data]));
                 var fileLink = document.createElement('a');
