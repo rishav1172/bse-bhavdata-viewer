@@ -3,12 +3,9 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Update Axion Endpoint URL
 
-### Compiles and minifies for production
+### To generate static and minified file for production
 ```
 npm run build
 ```
