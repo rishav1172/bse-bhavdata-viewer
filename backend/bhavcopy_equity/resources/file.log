@@ -1,0 +1,80 @@
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Print ho gaya
+Download ho gaya
+Download ho gaya
+Download ho gaya
+010421y
+010421
+Download ho gaya
+020421
+Failed to complete cronjob at ('*/1 * * * *', 'bhavcopy_equity.cron.getUpdateBhavCopyZip', '>> /home/rishav1172/Desktop/zerodha/projectZero/bhavcopy_equity/resources/file.log')
+Traceback (most recent call last):
+  File "/home/rishav1172/Desktop/zerodha/vent/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/rishav1172/Desktop/zerodha/projectZero/bhavcopy_equity/cron.py", line 24, in getUpdateBhavCopyZip
+    populateRedis(iteratorCSV)
+  File "/home/rishav1172/Desktop/zerodha/projectZero/bhavcopy_equity/cron.py", line 33, in populateRedis
+    'open': ' '.join[indiaCurrency, row[4]],
+TypeError: 'builtin_function_or_method' object is not subscriptable
+020421
+Failed to complete cronjob at ('*/1 * * * *', 'bhavcopy_equity.cron.getUpdateBhavCopyZip', '>> /home/rishav1172/Desktop/zerodha/projectZero/bhavcopy_equity/resources/file.log')
+Traceback (most recent call last):
+  File "/home/rishav1172/Desktop/zerodha/vent/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/rishav1172/Desktop/zerodha/projectZero/bhavcopy_equity/cron.py", line 24, in getUpdateBhavCopyZip
+    populateRedis(iteratorCSV)
+  File "/home/rishav1172/Desktop/zerodha/projectZero/bhavcopy_equity/cron.py", line 33, in populateRedis
+    'open': ' '.join[indiaCurrency, row[4]],
+TypeError: 'builtin_function_or_method' object is not subscriptable
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+020421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
+030421
