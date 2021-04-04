@@ -21,23 +21,18 @@ npm install
 ```
 This will download all the requirement.
 
-Configure axios enpoint url at public/constatnt.js -
-```
-apiEndpointUrl = <Your django web-server url>
-```
-
 Generate all static files - 
 ```
 npm run build
 ```
-This will generate static files in backend/static and backend/template folder
+This will generate static files in backend/static and backend/template folder.
 
 ### Backend folder - 
 Navigate to backend folder and run -
 ```
 pip install -r requirements.txt
 ```
-This will install all dependencies
+This will install all dependencies.
 
 Configure Redis Server end-point url in projectZero/settings.py file - 
 ```
@@ -52,7 +47,7 @@ CRONJOBS = [
     ('0 18 * * *', 'bhavcopy_equity.cron.getUpdateBhavCopyZip', '>> /home/file.log')
 ]
 ```
-Above configuration will run cron job 18:00 IST everyday
+Above configuration will get the Bhav Copy data and populate the redis server everyday 18:00 IST.
 
 To start cron job - 
 ```

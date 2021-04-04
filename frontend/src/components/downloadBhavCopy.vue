@@ -19,7 +19,7 @@ export default {
                 headers: {
                     "content-type": "application/json"
                 },
-                url: constant.apiEndpointUrl + '/download',
+                url: 'http:127.0.0.1:8000/download',
             }).then(response => {
                 var fileURL = window.URL.createObjectURL(new Blob([response.data]));
                 var fileLink = document.createElement('a');

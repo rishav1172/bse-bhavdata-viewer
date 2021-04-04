@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import constant from '../public/constant';
 import BhavCopy from './components/bhavCopy.vue';
 import DownloadBhavCopy from './components/downloadBhavCopy';
 import SearchComponent from './components/searchComponent';
@@ -42,7 +41,7 @@ export default {
     getData() {
       axios({
         method: 'get',
-        url: constant.apiEndpointUrl,
+        url: 'http:127.0.0.1:8000',
       }).then(response => this.bhavCopyData = response.data);
     }
   }

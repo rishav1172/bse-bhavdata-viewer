@@ -25,7 +25,7 @@ export default {
                 headers: {
                     "content-type": "application/json"
                 },
-                url: constant.apiEndpointUrl + '/search',
+                url: 'http:127.0.0.1:8000/search',
             }).then(response => this.$emit('clicked', response.data));
         }
     }
