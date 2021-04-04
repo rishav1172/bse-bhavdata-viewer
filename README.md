@@ -14,26 +14,26 @@ This Web Application
 ## Project Setup
 
 ### Frontend folder -
-Navigate to frontend folder and run
+Navigate to frontend folder and run - 
 
 ```
 npm install
 ```
 This will download all the requirement.
 
-Configure axios enpoint url at public/constatnt.js
+Configure axios enpoint url at public/constatnt.js -
 ```
 apiEndpointUrl = <Your django web-server url>
 ```
 
-Generate all static files
+Generate all static files - 
 ```
 npm run build
 ```
 This will generate static files in backend/static and backend/template folder
 
 ### Backend folder - 
-Navigate to backend folder and run
+Navigate to backend folder and run -
 ```
 pip install -r requirements.txt
 ```
