@@ -1,6 +1,3 @@
-Web App to view BSE Bhav Copy data.
-Perform search and download
-
 # BSE BhavCopy Viewer
 You can check Demo at [https://bhav-copy-viewer.herokuapp.com/home](https://bhav-copy-viewer.herokuapp.com/home) 
 ## Introduction
@@ -24,7 +21,7 @@ npm install
 ```
 This will download all the requirement.
 
-Configure endpoint axios Enpoint Url at public/constatnt.js
+Configure axios enpoint url at public/constatnt.js
 ```
 apiEndpointUrl = <Your django web-server url>
 ```
@@ -36,20 +33,36 @@ npm run build
 This will generate static files in backend/static and backend/template folder
 
 ### Backend folder - 
-First install all dependencies -
-
+Navigate to backend folder and run
 ```
 pip install -r requirements.txt
 ```
+This will install all dependencies
 
-Configure Redis Server in projectZero/settings.py file - 
+Configure Redis Server end-point url in projectZero/settings.py file - 
 ```
 REDIS_HOST = <redis-server host>
 REDIS_PORT = <redis-server port>
 REDIS_PASSWORD = <redis-server password>
 ```
 
+To configure the time interval of cron job update the projectZero/settings.py below property - 
+```
+CRONJOBS = [
+    ('0 18 * * *', 'bhavcopy_equity.cron.getUpdateBhavCopyZip', '>> /home/file.log')
+]
+```
+Above configuration will run cron job 18:00 IST everyday
 
+To start cron job - 
+```
+python manage.py crontab add
+```
+
+Start your server -
+```
+python manage.py runserver
+```
 
 
 
